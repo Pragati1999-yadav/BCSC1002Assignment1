@@ -1,5 +1,5 @@
 /* Created by IntelliJ IDEA.
- *  Author : Pragati Yadav
+ *  Author : Pragati Yadav(Pragati1999-yadav)
  *  Date : 30-08-2020
  *  Time : 01:38 PM
  *  File : FrontDesk.java
@@ -8,7 +8,6 @@
 
 package Execution;
 
-import definitions.Book;
 import definitions.Library;
 import definitions.Student;
 
@@ -28,13 +27,13 @@ public class FrontDesk {
 
         Library libraryObject = new Library();
         Student studentObject = new Student();
-        System.out.println(" Enter your first name");
+        System.out.println(" Enter your First name");
         String firstname = scanner.next();
-        System.out.println("ENTER YOUR MIDDLE NAME:");
+        System.out.println("Enter your Middle name:");
         String middlename = scanner.next();
-        System.out.println("ENTER YOUR LAST NAME:");
+        System.out.println("Enter your Last name:");
         String lastname = scanner.next();
-        System.out.println("ENTER YOUR ROLL NUMBER:");
+        System.out.println("Enter your University Roll Number:");
         Long rollNumber = scanner.nextLong();
 
         scanner.nextLine();
@@ -55,13 +54,13 @@ public class FrontDesk {
 
             switch (choice) {
                 case Issue_Book:
-                    System.out.println("ENTER THE NAME OF BOOK, YOU WANT TO ISSUE:");
+                    System.out.println("Enter the Book name you want to issue:");
                     bookName = scanner.nextLine();
                     scanner.nextLine();
                     libraryObject.doCheckOut(bookName);
                     break;
                 case Return_Previously_Issued_Book:
-                    System.out.println("ENTER THE NAME OF BOOK,YOU WANT TO RETURN:");
+                    System.out.println("Enter the book name you want to return:");
                     scanner.nextLine();
                     bookName = scanner.nextLine();
                     libraryObject.doReturn(bookName);
@@ -75,7 +74,7 @@ public class FrontDesk {
                     break;
             }
         } else {
-            System.out.println("PLEASE CHOOSE THE CORRECT OPTION???");
+            System.out.println("Please input the correct digit");
         }
         scanner.close();
     }
