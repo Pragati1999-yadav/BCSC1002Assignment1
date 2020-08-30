@@ -1,13 +1,13 @@
 /* Created by IntelliJ IDEA.
  *  Author : Pragati Yadav(Pragati1999-yadav)
  *  Date : 30-08-2020
- *  Time : 01:23 PM
- *  File : Book.java
+ *  Time : 07:25 PM
+ *  File : book.java
  */
+
 package definitions;
 
 import java.util.Objects;
-
 import java.util.Scanner;
 
 public class Book {
@@ -78,14 +78,16 @@ public class Book {
     /**
      * This will allow the Student to issue the book.
      */
-    public void doCheckout() {
+    public void doCheckout()
+    {
         System.out.println("Thank you for Issue the book.");
     }
 
     /**
      * This will allow the Student to return the book.
      */
-    public void doReturn() {
+    public void doReturn()
+    {
         System.out.println("Thank you for Return the book.");
     }
 
@@ -101,7 +103,8 @@ public class Book {
     }
 
     @Override
-    public int hashCode() {
+    public int hashCode()
+    {
         return Objects.hash(nameOfBook, authorOfTheBook, ISBNNumber);
     }
 }

@@ -1,11 +1,9 @@
 /* Created by IntelliJ IDEA.
  *  Author : Pragati Yadav(Pragati1999-yadav)
  *  Date : 30-08-2020
- *  Time : 01:30 PM
- *  File : Student.java
+ *  Time : 07:32 PM
+ *  File : Book.java
  */
-
-
 package definitions;
 
 
@@ -126,6 +124,7 @@ public class Student
         return result;
     }
 }
+
 
 
 
